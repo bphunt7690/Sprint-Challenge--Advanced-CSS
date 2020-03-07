@@ -82,7 +82,8 @@ summary,
 time,
 mark,
 audio,
-video {
+video,
+button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -229,6 +230,15 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text button {
+  width: 95px;
+  height: 35px;
+  margin: auto;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
 }
 .home .walk .walk-img {
   width: 46%;
