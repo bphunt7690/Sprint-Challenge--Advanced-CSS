@@ -20,11 +20,15 @@
     width: 100%;
 
     img {
-      width: 28%;
+      .sizing(28%, 100%);
       margin: 20px 2.5%;
       border-radius: 20px;
-      height: 100%;
+
+      @media @mobile {
+        .sizing(100%, 100%);
+      }
     }
+
   }
 
   .visit-planets {
@@ -43,8 +47,12 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .display(center);
+
+    @media @mobile {
+      padding: 15px;
+      margin: 0 auto;
+    }
 
     .walk-text {
       width: 50%;
@@ -57,19 +65,93 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      @media @mobile {
+        width: 100%;
+        padding: 15px;
       }
+
+      button {
+        .sizing(95px, 35px,);
+        margin: auto;
+        .color(black, white);
+        border-radius: 10px;
+        font-size: 20px;
+
+        @media @mobile {
+          width: 100%;
+        }
+      }
+      button:hover {
+        .color(darkblue, aqua);
     }
 
+  }
+
+
     .walk-img {
-      width: 46%;
+      width: 100%;
       margin-left: 4%;
       
       img {
-        width: 100%;
-        height: auto;
+        .sizing(100%, auto);
         border-radius: 10px;
+
+        @media @mobile {
+          .sizing(100%, 100%);
+          align-items: center;
+          margin: 0 auto;
+        }
       }
     }
   }
 }// home
+
+@media @mobile {
+
+  header {
+    justify-content: space-between;
+     
+    nav {
+       margin: 4% auto 0;
+     }
+  }  
+
+  .main-img {
+    width: 100%;
+  }
+
+  .space-images {
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .sky {
+    display: none;
+		visibility: hidden;
+  }
+
+  .launch {
+    display: none;
+		visibility: hidden;
+  }
+
+  .blast {
+    .sizing(50%, auto);
+    margin: 0 auto;
+  }
+
+  .walk {
+    align-items: center;
+    flex-direction: column-reverse;
+    }
+
+    .walk-text {
+      width: 100%;
+      padding: 15px;
+      margin: auto;
+    }
+  
+}
+  
