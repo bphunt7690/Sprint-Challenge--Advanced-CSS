@@ -240,9 +240,9 @@ footer {
   border-radius: 10px;
   font-size: 20px;
 }
-.home .walk .walk-text button button:hover {
-  color: aqua;
+.home .walk .walk-text button:hover {
   background-color: darkblue;
+  color: aqua;
 }
 .home .walk .walk-img {
   width: 46%;
