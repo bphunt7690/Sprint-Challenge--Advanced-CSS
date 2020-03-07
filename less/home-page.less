@@ -82,11 +82,20 @@
 }// home
 
 @media @mobile {
-  .space-images {
+
+  nav {
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+
+  .main-img {
+    width: 100%;
+  }
+
+  .space-images {
     justify-content: center;
     max-width: 100%;
+    margin: auto;
   }
 
   .sky {
@@ -100,8 +109,10 @@
   }
 
   .walk {
+    align-items: center;
     flex-direction: column-reverse;
+    
   }
 
-  
 }
+  
