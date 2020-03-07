@@ -202,9 +202,9 @@ footer {
 }
 .home .space-images img {
   width: 28%;
+  height: 100%;
   margin: 20px 2.5%;
   border-radius: 20px;
-  height: 100%;
 }
 .home .visit-planets {
   padding: 15px;
