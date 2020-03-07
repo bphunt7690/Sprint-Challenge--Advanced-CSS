@@ -75,7 +75,33 @@
       img {
         .sizing (100%, auto);
         border-radius: 10px;
+      
       }
     }
   }
 }// home
+
+@media @mobile {
+  .space-images {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .sky {
+    display: none;
+		visibility: hidden;
+  }
+
+  .launch {
+    display: none;
+		visibility: hidden;
+  }
+
+  .walk {
+    flex-direction: column-reverse;
+  }
+
+  
+}
