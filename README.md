@@ -34,7 +34,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-responsive websites will adjust to their screen size after hitting a certain break point  where adaptive uses specific sizes and will only changes at the specfic sizes specified.
+responsive websites will adapt to the screen size no matter what where adaptive uses specific sizes and will only changes at the specfic sizes specified.
 
 2. Describe what it means to be mobile first vs desktop first.
 

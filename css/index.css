@@ -254,9 +254,11 @@ footer {
   border-radius: 10px;
 }
 @media ( max-width: 500px) {
-  nav {
-    display: flex;
-    justify-content: space-evenly;
+  header {
+    justify-content: space-between;
+  }
+  header nav {
+    margin: 4% auto 0;
   }
   .main-img {
     width: 100%;
